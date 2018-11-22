@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Authors: William Chen and Chijun Sha-->
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="300.0" prefWidth="400.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+   
+      <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin Applications.">
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Adding Users:">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Input an username into the TextField and press &quot;Insert&quot;.">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="  -&gt; Note:Names should be unique">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+       <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Removing users:">
+           <VBox.margin>
+               <Insets left="10.0" />
+           </VBox.margin>
+       </Text>
+       <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Click on a user and press &quot;Remove&quot; to Remove a user.">
+           <VBox.margin>
+               <Insets left="10.0" />
+           </VBox.margin>
+       </Text>
+   
+       <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0">
+           <VBox.margin>
+               <Insets left="10.0" />
+           </VBox.margin>
+       </Text>
+       <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="Inside the Application:">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text="The admin can add its own pictures and albums.">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+       <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0" text=" -&gt; Click Navigate and click on &quot;View Albums&quot;">
+           <VBox.margin>
+               <Insets left="10.0" />
+           </VBox.margin>
+       </Text>
+   
+       <Text fill="#f5f2f2" strokeType="OUTSIDE" strokeWidth="0.0">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+   </children>
+</VBox>

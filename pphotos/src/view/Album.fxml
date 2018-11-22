@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Authors: William Chen and Chijun Sha-->
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CAlbum">
+
+   <children>
+
+   <MenuBar fx:id="menu" style="-fx-background-color: grey;">
+      <menus>
+         <Menu text="File">
+            <items>
+               <MenuItem onAction="#doLogoff" text="Logout" />
+               <SeparatorMenuItem />
+               <MenuItem onAction="#doExit" text="Close" />
+            </items>
+         </Menu>
+         <Menu text="Navigate">
+            <items>
+               <MenuItem onAction="#gotoAlbumList" text="View Albums" />
+            </items>
+         </Menu>
+         <Menu text="Help">
+            <items>
+               <MenuItem onAction="#doHelp" text="All Albums" />
+            </items>
+         </Menu>
+      </menus>   
+	  </MenuBar>
+   
+   
+
+
+   <HBox>
+   <children>
+
+			<TabPane fx:id="tab" prefHeight="575.0" prefWidth="660.0" style="-fx-background-color: grey;">
+				<tabs>
+					<Tab text="All Albums">
+						<content>
+							  <ScrollPane prefHeight="575.0" prefWidth="660.0">
+								<content>
+											<TilePane fx:id="tile" prefHeight="575.0" prefWidth="660.0" style="-fx-background-color: grey;" />
+								</content>
+							  </ScrollPane>
+						</content>
+					</Tab>
+					<Tab text="All Photos">
+						<content>
+									<Pagination fx:id="pagination" maxPageIndicatorCount="5" style="-fx-background-color: black;" /> 
+						</content>
+					</Tab>
+				</tabs>
+			</TabPane>
+
+		 
+<VBox prefWidth="240.0">
+   <children>
+   	
+   	
+       <GridPane hgap="10" prefHeight="75.0" vgap="10">
+      <children>
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+              <TextField fx:id="tagName" prefColumnCount="10" prefWidth="100.0" promptText="Tag Name" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      		
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Value" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+              <TextField fx:id="tagValue" prefColumnCount="10" prefWidth="100.0" promptText="Tag Value" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      </children>
+   	
+           <padding>
+               <Insets bottom="10" left="10" right="10" top="10" />
+           </padding>
+           <VBox.margin>
+             <Insets right="1.0" top="1.0" />
+           </VBox.margin>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>
+       </GridPane>
+   	
+   	
+   	
+       <GridPane hgap="10.0" prefHeight="50.0">
+           <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+           </rowConstraints>
+           <VBox.margin>
+               <Insets bottom="20.0" left="20.0" />
+           </VBox.margin>
+      <children>
+      
+              <Button fx:id="add" onAction="#doAddTag" prefHeight="27.0" prefWidth="100.0" style="-fx-background-color: #ffe6e6;" text="Insert Tag" textFill="#f80606" GridPane.columnIndex="0" />
+              <Button fx:id="delete" onAction="#doDeleteTag" prefWidth="100.0" style="-fx-background-color: #ffe6e6;" text="Remove Tag" textFill="#f20202" GridPane.columnIndex="1" />
+      </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+   
+       </GridPane>
+   
+       <GridPane hgap="10" prefHeight="50.0" vgap="10">
+      <children>
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tags for Current Highlighted Photo" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      </children>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints />
+                        <RowConstraints />
+                     </rowConstraints>	
+       </GridPane>
+   
+       <ListView fx:id="listTag" prefHeight="350.0" />
+   </children>
+</VBox>
+			  
+			  
+			</children>
+	</HBox>
+
+   </children>
+
+
+</VBox>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Authors: William Chen and Chijun Sha-->
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="530.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+   
+      <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Program designed by Alexmandez">
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Logging In:">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Input either an username or &quot;admin&quot; to login.">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="  -&gt; The admin can create new user or remove an existing user.">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Inside an album:">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+       <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="You can insert a picture from the file system on your computer.">
+           <VBox.margin>
+               <Insets left="10.0" />
+           </VBox.margin>
+       </Text>
+       <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="Right clicking on a picture gives you options to:">
+         <VBox.margin>
+            <Insets left="10.0" />
+         </VBox.margin>
+      </Text>
+       <Text fill="#f8f8f8" strokeType="OUTSIDE" strokeWidth="0.0" text="-&gt; Move, delete or change the picture to another album.">
+           <VBox.margin>
+               <Insets left="10.0" />
+           </VBox.margin>
+       </Text>
+   </children>
+</VBox>
